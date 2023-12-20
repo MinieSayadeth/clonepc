@@ -9,6 +9,7 @@
       scrc="https://kit.fontawesome.com/c8e4d183c2js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
   </head>
   <body>
@@ -44,6 +45,36 @@
                 <button class="btn nav__link--btn">Sign Up</button>
               </a>
             </li>
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop row">
+              <button class="btn__menu btn__menu--close" onclick="openMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__link--item">
+                  <a href="#" class="menu__link">About</a>
+                </li>
+                <li class="menu__link--item">
+                  <a href="#" class="menu__link">Blog</a>
+                </li>
+                <li class="menu__link--item">
+                  <a href="#" class="menu__link">Pricing</a>
+                </li>
+                <li class="menu__link--item">
+                  <a href="#" class="menu__link">Contact Us</a>
+                </li>
+                <li class="menu__link--item">
+                  <a href="#" class="menu__link">Login</a>
+                </li>
+                <li class="menu__link--item">
+                  <button class="btn btn__mobile--nav">
+                    <a href="#" class="menu__link menu__link--btn">Sign Up</a>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </ul>
         </div>
       </div>
